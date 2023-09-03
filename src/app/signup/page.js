@@ -151,8 +151,10 @@ const SignUp = () => {
                                     render={ ({field}) => <Checkbox value="allowExtraEmails" color="primary" 
                                     label="I am Author"
                                     {...field}
-                                    />}
+                                    /> 
+                                   } 
                                 />
+                                <span>I am Author</span>
                             </Grid>
                         </Grid>
                         <Button

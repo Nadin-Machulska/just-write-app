@@ -12,20 +12,20 @@ export default function Home() {
             <Box
               
             >
-              <h1>
+              <h1 className="logo-text">
                 <span>just</span>
                 Write
               </h1>
-              <p>Write, share, talk - you can everything here!</p>
+              <p className="logo-title">Write, share, talk - become an Author or comment other people thoughts!</p>
             </Box>
         </Grid>
         <Grid item >
             <Box
               
             >
-              <p>Tell about your new experience</p>
+              <p  className="btn-label">Tell about your new experience</p>
               <Link className="sign-link" href="/sign-in">Sign in</Link>
-              <p>Don`t have a profile? Sign up!</p>
+              <p className="btn-label">Don`t have a profile? Sign up!</p>
               <Link className="sign-link" href="/signup">Sign up</Link>
             </Box>
         </Grid>

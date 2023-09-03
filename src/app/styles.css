@@ -1,4 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:300,regular,500,600,700,800,300italic,italic,500italic,600italic,700italic,800italic);
+body{
+    margin: 0;
+}
 .sign-link{
     box-sizing: border-box;
     width: 240px;
@@ -13,4 +16,56 @@
     text-decoration: none;
     font-size: 18px;
     font-family: 'Open Sans';
+}
+.sign-link:hover{
+    background-color: #a94ce7;
+    color: white;
+
+}
+.container{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+.css-mhc70k-MuiGrid-root{
+    margin-left: 0;
+}
+.container > h1{
+    margin-left: 16px;
+    font-family: 'Open Sans';
+    font-weight: 400;
+    
+}
+.css-16m3jxf-MuiTypography-root{
+    font-family: 'Open Sans';
+}
+.css-ag7rrr-MuiTypography-root{
+    font-family: 'Open Sans';
+
+}
+.css-hip9hq-MuiPaper-root-MuiAppBar-root{
+    background-color: #b42fdd;
+}
+.css-ancrnh-MuiButtonBase-root-MuiIconButton-root{
+    font-family: 'Open Sans';
+    font-weight: 300;
+}
+.css-1hx6p0u-MuiGrid-root{
+    margin-right: 30px;
+}
+.logo-text{
+    font-family: 'Open Sans';
+    color: #0d7cd8;
+    font-size: 3.5rem;
+    font-style: italic;
+}
+.logo-title {
+    max-width: 401px;
+    font-family: 'Open Sans';
+    font-size: 20px;
+}
+.btn-label{
+    font-family: 'Open Sans';
+    font-size: 16px;
+
 }

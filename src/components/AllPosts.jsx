@@ -15,8 +15,9 @@ import DialogActions from '@mui/material/DialogActions';
 import DialogContent from '@mui/material/DialogContent';
 import DialogContentText from '@mui/material/DialogContentText';
 import DialogTitle from '@mui/material/DialogTitle';
-import { useState} from 'react';
+import { useState } from 'react';
 import Link from 'next/link';
+import { Grid } from '@mui/material';
 
 const AllPosts = ({ title, postText, currentUserinfo, currentUserEmail, allPosts, savePost, setTitle, setPostText }) => {
 
@@ -43,9 +44,9 @@ const AllPosts = ({ title, postText, currentUserinfo, currentUserEmail, allPosts
                     <Button variant="outlined" onClick={handleClickOpen}>
                         Create post
                     </Button >
-                    :  null
+                    : null
             }
-            <Dialog  open={open} onClose={handleClose}>
+            <Dialog open={open} onClose={handleClose}>
                 <DialogTitle>Subscribe</DialogTitle>
                 <DialogContent>
                     <DialogContentText>
@@ -69,36 +70,41 @@ const AllPosts = ({ title, postText, currentUserinfo, currentUserEmail, allPosts
                     <Button onClick={savePost}>Save</Button>
                 </DialogActions>
             </Dialog>
-            {
-                allPosts?.map(post => {
-                    return <Card sx={{ maxWidth: 345 }}>
-                        <Link  href={`/home/${post.nickname}`}>
-                            <CardHeader
-                                avatar={
-                                    <Avatar sx={{ bgcolor: red[500] }} aria-label="recipe">
-                                    </Avatar>
-                                }
-                                action={
-                                    <IconButton aria-label="settings">
-                                        <MoreVertIcon />
-                                    </IconButton>
-                                }
-                                title={`${post.firstName} ${post.lastName}`}
-                                subheader={`${post.created_at}`}
-                            />
+            <Grid container spacing={2}>
+                {
+                    allPosts?.map(post => {
+                        return <Grid item xs={6}>
+                            <Card sx={{ maxWidth: 345 }}>
+                                <Link href={`/home/${post.nickname}`}>
+                                    <CardHeader
+                                        avatar={
+                                            <Avatar sx={{ bgcolor: red[500] }} aria-label="recipe">
+                                            </Avatar>
+                                        }
+                                        action={
+                                            <IconButton aria-label="settings">
+                                                <MoreVertIcon />
+                                            </IconButton>
+                                        }
+                                        title={`${post.firstName} ${post.lastName}`}
+                                        subheader={`${post.created_at}`}
+                                    />
 
-                        </Link>
-                        <CardContent>
-                            <Typography variant="body2" color="text.secondary">
-                                {post.title}
-                            </Typography>
-                            <Typography variant="body2" color="text.secondary">
-                                {post.post}
-                            </Typography>
-                        </CardContent>
-                    </Card>
-                })
-            }
+                                </Link>
+                                <CardContent>
+                                    <Typography variant="body2" color="text.secondary">
+                                        {post.title}
+                                    </Typography>
+                                    <Typography variant="body2" color="text.secondary">
+                                        {post.post}
+                                    </Typography>
+                                </CardContent>
+                            </Card>
+
+                        </Grid>
+                    })
+                }
+            </Grid>
         </>
 
     )
