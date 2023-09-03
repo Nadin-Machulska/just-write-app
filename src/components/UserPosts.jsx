@@ -1,5 +1,5 @@
 
-const UserPosts = ({allPosts, currentUserInfo, currentUserEmail}) => {
+const UserPosts = ({}) => {
     return (
         <div>
             <h1>111</h1>

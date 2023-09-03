@@ -10,18 +10,14 @@ import { red } from '@mui/material/colors';
 import MoreVertIcon from '@mui/icons-material/MoreVert';
 import Button from '@mui/material/Button';
 import TextField from '@mui/material/TextField';
-import useMediaQuery from '@mui/material/useMediaQuery';
 import Dialog from '@mui/material/Dialog';
 import DialogActions from '@mui/material/DialogActions';
 import DialogContent from '@mui/material/DialogContent';
 import DialogContentText from '@mui/material/DialogContentText';
 import DialogTitle from '@mui/material/DialogTitle';
-import { useTheme } from '@mui/material/styles';
 import { useState} from 'react';
 import Link from 'next/link';
 
-const theme = useTheme();
-const fullScreen = useMediaQuery(theme.breakpoints.down('md'));
 const AllPosts = ({ title, postText, currentUserinfo, currentUserEmail, allPosts, savePost, setTitle, setPostText }) => {
 
     const [open, setOpen] = useState(false);
@@ -49,7 +45,7 @@ const AllPosts = ({ title, postText, currentUserinfo, currentUserEmail, allPosts
                     </Button >
                     :  null
             }
-            <Dialog fullScreen={fullScreen} open={open} onClose={handleClose}>
+            <Dialog  open={open} onClose={handleClose}>
                 <DialogTitle>Subscribe</DialogTitle>
                 <DialogContent>
                     <DialogContentText>
