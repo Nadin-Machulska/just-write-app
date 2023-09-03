@@ -1,10 +1,8 @@
 'use client'
 import HeaderIn from "@/components/HeaderIn";
-import SideBar from "@/components/SideBar";
 import { useState } from "react";
 import { createClientComponentClient } from "@supabase/auth-helpers-nextjs";
 import AllPosts from "@/components/AllPosts";
-import UserPosts from "@/components/UserPosts";
 
 const page = () => {
     const supabase = createClientComponentClient();
