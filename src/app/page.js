@@ -10,15 +10,7 @@ export default function Home() {
   alignItems="center" spacing={2}>
         <Grid item >
             <Box
-              sx={{
-                // width: 300,
-                // height: 300,
-                // backgroundColor: 'primary.dark',
-                // '&:hover': {
-                //     backgroundColor: 'primary.main',
-                //     opacity: [0.9, 0.8, 0.7],
-                // },
-              }}
+              
             >
               <h1>
                 <span>just</span>
@@ -29,15 +21,7 @@ export default function Home() {
         </Grid>
         <Grid item >
             <Box
-              sx={{
-                // width: 300,
-                // height: 300,
-                // backgroundColor: 'primary.dark',
-                // '&:hover': {
-                //     backgroundColor: 'primary.main',
-                //     opacity: [0.9, 0.8, 0.7],
-                // },
-              }}
+              
             >
               <p>Tell about your new experience</p>
               <Link className="sign-link" href="/sign-in">Sign in</Link>
