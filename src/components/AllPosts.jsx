@@ -26,7 +26,6 @@ import { useTheme } from '@mui/material/styles';
 import { useState, useContext, createContext } from 'react';
 import Link from 'next/link';
 
-// const AllPostsContext = createContext();
 
 const ExpandMore = styled((props) => {
     const { expand, ...other } = props;

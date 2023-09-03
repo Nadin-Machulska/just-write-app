@@ -43,8 +43,6 @@ const page = () => {
                 lastName: currentUserinfo?.lastName,
                 nickname: currentUserinfo?.nickname
             })
-        console.log(usersPostsError);
-        console.log(currentUserinfo);
     }
     const getAllPosts = async () => {
         const { data, error } = await supabase
@@ -58,8 +56,6 @@ const page = () => {
         <>
             <HeaderIn />
             <AllPosts title={title} setTitle={setTitle} setPostText={setPostText} postText={postText} currentUserinfo={currentUserinfo} currentUserEmail={currentUserEmail} allPosts={allPosts} savePost={savePost} />
-            {/* <UserPosts allPosts={allPosts} currentUserinfo={currentUserinfo} currentUserEmail={currentUserEmail}/> */}
-            {/* <SideBar /> */}
         </>
     )
 };

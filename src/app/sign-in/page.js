@@ -36,10 +36,7 @@ const LogIn = () => {
                 options: {
                     emailRedirectTo: `${location.origin}/auth/callback`,
                   },
-            })
-        console.log(data);
-        console.log(error);
-            
+            })            
     }
     return (
         <ThemeProvider theme={defaultTheme}>

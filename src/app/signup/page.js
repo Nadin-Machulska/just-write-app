@@ -49,13 +49,6 @@ const SignUp = () => {
                 nickname: data.nickname
             })
 
-//             const { error} = await supabase
-//             .from('posts')
-//             .insert({
-//                 firstName: data.firstName,
-//                 lastName: data.lastName,
-//             })
-// console.log(error);
         }
     return (
         <ThemeProvider theme={defaultTheme}>
