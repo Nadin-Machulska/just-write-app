@@ -1,4 +1,4 @@
-import { Grid, Button, Item, Box } from "@mui/material";
+import { Grid, Item, Box } from "@mui/material";
 import Link from 'next/link';
 const page = () => {
     return (
@@ -7,36 +7,18 @@ const page = () => {
                 <Grid item >
                     <Item>
                         <Box
-                            sx={{
-                                // width: 300,
-                                // height: 300,
-                                // backgroundColor: 'primary.dark',
-                                // '&:hover': {
-                                //     backgroundColor: 'primary.main',
-                                //     opacity: [0.9, 0.8, 0.7],
-                                // },
-                            }}
                         >
                             <h1>
                                 <span>just</span>
                                 Write
                             </h1>
-                            <p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
+                            <p>a</p>
                         </Box>
                     </Item>
                 </Grid>
                 <Grid item >
                     <Item>
                         <Box
-                            sx={{
-                                // width: 300,
-                                // height: 300,
-                                // backgroundColor: 'primary.dark',
-                                // '&:hover': {
-                                //     backgroundColor: 'primary.main',
-                                //     opacity: [0.9, 0.8, 0.7],
-                                // },
-                            }}
                         >
                             <p>Tell about your new experience</p>
                             <Link href="/sign-in">Sign in</Link>
