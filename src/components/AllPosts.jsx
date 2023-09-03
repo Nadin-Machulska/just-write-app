@@ -20,12 +20,9 @@ import { useTheme } from '@mui/material/styles';
 import { useState} from 'react';
 import Link from 'next/link';
 
-
-
-
+const theme = useTheme();
+const fullScreen = useMediaQuery(theme.breakpoints.down('md'));
 const AllPosts = ({ title, postText, currentUserinfo, currentUserEmail, allPosts, savePost, setTitle, setPostText }) => {
-    const theme = useTheme();
-    const fullScreen = useMediaQuery(theme.breakpoints.down('md'));
 
     const [open, setOpen] = useState(false);
     const [expanded, setExpanded] = useState(false);
